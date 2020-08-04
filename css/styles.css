@@ -77,7 +77,6 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -153,18 +152,22 @@ footer {
     padding-right: 18px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px ) {
     body {
         min-width: 350px;
     }
     .service {
         padding: 0 10px;
     }
+    .main-section {
+        flex-wrap: wrap;
+        width: 100%;
+    }
     .div-text {
-        min-width: 350px;
-        word-wrap: break-word;
+         min-width: 350px;
+         word-wrap: break-word;
     }
     .img-office {
-        flex-wrap: wrap;
+        width: 100%;
     }
 }
